@@ -1,0 +1,383 @@
+@import "variable";
+body {
+  position: relative;
+}
+%fontbase {
+  color: #fff;
+  font-family: "cantarellregular";
+}
+.media:hover {
+  filter: invert(1) brightness(1000%);
+}
+h1 {
+  font-size: 2vw;
+  font-family: "pantheraregular";
+  color: #9e91b7;
+}
+main {
+  h4 {
+    font-family: "beynoregular";
+    color: #9e91b7;
+    font-weight: 100;
+  }
+  text-align: justify;
+}
+.div1 {
+  position: absolute;
+  z-index: 100;
+}
+.div2 {
+  margin: 7em 0em 2em 8em;
+  width: 35%;
+  a {
+    @extend %fontbase;
+  }
+  p {
+    text-align: justify;
+    padding: 0em 6em 0em 0em;
+  }
+}
+.div3 {
+  width: fit-content;
+  margin-left: 10em;
+}
+.pantherhome1 {
+  float: right;
+  width: calc(50% + 20em);
+  margin-top: -25em;
+}
+.section2 {
+  display: flex;
+  gap: 1em;
+  margin: 13em 0em 0em 14em;
+  background-color: #021740;
+  padding: 0em 0em 0em 2em;
+  width: 80vw;
+  height: 37vh;
+  position: relative;
+  .paragraphe {
+    margin: 1em 0em 1em 0em;
+    a {
+      @extend %fontbase;
+    }
+  }
+}
+.panther {
+  width: 15vw;
+  height: 37vh;
+}
+.fleche {
+  position: absolute;
+  border-radius: 50%;
+  color: #fff;
+  border: none;
+  background-color: #021740;
+  width: 2.5em;
+  height: 2.5em;
+  left: 74vw;
+  top: 8em;
+  font-family: "cantarellregular";
+}
+.tchalla {
+  background-color: #fff;
+  border-radius: 5px;
+  font-family: "cantarellregular";
+  margin: 40vh 0.5em 0em 8.3vw;
+  width: 270px;
+  padding: 12em 2.5em 5em 2.5em;
+  position: relative;
+}
+.div4 {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+  font-size: 24px;
+}
+.div5 {
+  display: flex;
+  gap: 1em;
+  justify-items: center;
+  align-items: center;
+  a {
+    background-color: #07338c;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+    font-size: 12px;
+  }
+}
+.div6 {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  margin-top: 2em;
+  font-size: 12px;
+  padding-right: 3em;
+}
+.pantherhome5 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 20vw;
+  z-index: 3;
+  margin: -30vh 2em 1em 3vw;
+}
+.pantherhome6 {
+  position: absolute;
+  width: 25vw;
+  top: 130vh;
+  left: 6vw;
+}
+.section3 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 4em 5em 10em 5em;
+}
+.section4 {
+  background-image: url("../illustations et logo/Accueil/Pantherhome7.png");
+  height: fit-content;
+  padding: 4em 4em 4em 4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  form {
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 1) 10%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    border-radius: 80px;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0em 3em 0em;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    width: calc(50% + 1em);
+  }
+  span:nth-child(1) {
+    color: #021740;
+    font-family: "cantarellregular";
+  }
+  span:nth-child(2) {
+    color: #021740;
+    font-family: "cantarellregular";
+    font-size: 2.5em;
+  }
+  %form {
+    border-radius: 35px;
+    background: none;
+    border: 1px solid black;
+    padding: 0.5em 0em 0.5em 2em;
+    width: 20vw;
+  }
+  input {
+    @extend %form;
+    height: 1.5em;
+    &::placeholder {
+      font-family: "cantarellregular";
+      font-size: 9px;
+      color: black;
+    }
+  }
+}
+textarea {
+  @extend %form;
+  height: 6em;
+  border-radius: 25px;
+}
+.div1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3em;
+  position: fixed;
+  left: 3em;
+  height: 10em;
+}
+.segment {
+  position: fixed;
+  color: transparent;
+  border-left: 3px solid #9e91b7;
+}
+.prime {
+  margin-left: 1.8em;
+  height: 390px;
+  margin-top: -15em;
+}
+.second {
+  margin-left: 3.2em;
+  height: 215px;
+  margin-top: -15em;
+}
+.div8 {
+  position: relative;
+}
+//______________________________________________________________________________________________________________________
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .div2 {
+    margin: 4em 0em 2em 7em;
+    width: 50%;
+  }
+  .div3 {
+    margin-left: 5em;
+  }
+  .pantherhome1 {
+    width: 100%;
+    margin-top: -10em;
+  }
+  .section2 {
+    margin: 2em 0em 1em 2em;
+    width: 80vw;
+  }
+  .panther {
+    width: 25vw;
+    height: 37vh;
+  }
+  .section3 {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2em 1em 1em 4em;
+  }
+  .tchalla {
+    margin: 8em 0.5em 0em 3em;
+    width: 30vw;
+    padding: 12em 2.5em 5em 2.5em;
+    position: relative;
+  }
+  .pantherhome5 {
+    position: absolute;
+    width: 22vw;
+    z-index: 3;
+    margin: -15vh 2em 1em 7vw;
+  }
+  .fleche {
+    left: 75vw;
+    background-color: #07338c;
+  }
+  .pantherhome6 {
+    left: 14vw;
+    width: 35vw;
+  }
+}
+@media (max-width: 768px) {
+  .div2 {
+    margin: 3em 0em 2em 6em;
+    width: 70%;
+  }
+  .div3 {
+    margin-left: 2em;
+  }
+  .pantherhome1 {
+    width: 100%;
+    margin-top: -5em;
+  }
+  .section2 {
+    margin: 2em 0em 1em 2em;
+    width: 100vw;
+  }
+  .panther {
+    width: 33vw;
+    height: 37vh;
+  }
+  .paragraphe2 {
+    display: none;
+  }
+  .section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 2em 2em 7em 4em;
+  }
+  .tchalla {
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: "cantarellregular";
+    margin: 44em 0.5em 0em 2em;
+    width: 28vw;
+    padding: 4em 2.5em 1em 2.5em;
+  }
+  .section4 {
+    width: 120vw;
+    margin-left: -5em;
+    padding: 0em;
+  }
+  .tchalla {
+    margin: 6em 0.5em 0em 3em;
+    width: 50vw;
+    padding: 9em 2.5em 5em 2.5em;
+    position: relative;
+  }
+  .pantherhome5 {
+    position: absolute;
+    width: 140px;
+    z-index: 3;
+    margin: -9vh 2em 1em 14vw;
+  }
+  .pantherhome6 {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .div2 {
+    margin: 2em 0em 2em 6em;
+    width: 90%;
+  }
+  .div3 {
+    margin-left: 1em;
+  }
+  .pantherhome1 {
+    width: 100%;
+    margin-top: 0;
+  }
+  .section2 {
+    margin: 2em 0em 0em 12em;
+    width: 100vw;
+  }
+  .panther {
+    width: 50vw;
+    height: 37vh;
+  }
+  .paragraphe2 {
+    display: none;
+  }
+  .section3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1em 1em 1em 4em;
+  }
+
+  .tchalla {
+    margin: 3em 0.5em 0em 0.5em;
+    width: 50vw;
+    padding: 12em 2.5em 5em 2.5em;
+    position: relative;
+  }
+  .pantherhome5 {
+    position: absolute;
+    width: 140px;
+    z-index: 3;
+    margin: 0vh 2em 1em 13vw;
+  }
+  .section4 {
+    width: 450px;
+    margin: 3em 0em 2em -3em;
+    padding: 1.5em;
+    input {
+      width: 200px;
+    }
+    textarea {
+      width: 200px;
+    }
+  }
+  .pantherhome6 {
+    display: none;
+  }
+}

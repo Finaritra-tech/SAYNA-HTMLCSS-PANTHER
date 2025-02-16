@@ -1,0 +1,152 @@
+@import "variable";
+body {
+  overflow-x: hidden;
+}
+.wakanda_section1 {
+  // background-color: aqua;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: -0.5em;
+  height: 60vh;
+  padding: 4vw 0vw 13vw 5vw;
+  p {
+    width: 27vw;
+  }
+  h3 {
+    font-family: "wakanda_foreverregular";
+    color: #9e91b7;
+    word-spacing: 0.5;
+    letter-spacing: 0.25vw;
+    margin-top: -1em;
+    font-size: 28px;
+  }
+  h1 {
+    font-family: "beynoregular";
+    color: #9e91b7;
+    font-size: 3.8vw;
+    font-weight: 200;
+  }
+  //height: 40em;
+}
+.pantherwakanda1 {
+  position: absolute;
+  left: -5em;
+  z-index: -1;
+  top: 1em;
+  //height: calc(80% + 15em);
+  //width: calc(100% + 12em);
+  width: 115vw;
+}
+.video_wakanda {
+  width: fit-content;
+  height: fit-content;
+  background-color: #3d2da6;
+  color: #fff;
+  margin: 3em 0em 3em 0em;
+  align-self: center;
+}
+.pantherwakanda21 {
+  width: calc(80% + 10em);
+}
+.colonne_wakanda {
+  padding: 8em 5em 2em 7em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4em;
+  p {
+    margin: 1em 0em 2em 0em;
+  }
+}
+
+//_______________________________________________________________________________________________________________________
+@media (max-width: 1024px) {
+  .wakanda_section1 {
+    height: auto;
+    padding: 8vw 5vw;
+    text-align: center;
+
+    p {
+      width: 60vw;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 5vw;
+    }
+  }
+
+  .colonne_wakanda {
+    grid-template-columns: 1fr;
+    padding: 5em 3em;
+  }
+
+  .pantherwakanda1 {
+    width: 100vw;
+    left: 0;
+  }
+
+  .video_wakanda {
+    margin: 2em auto;
+  }
+}
+
+/* Pour les écrans mobiles */
+@media (max-width: 768px) {
+  .wakanda_section1 {
+    padding: 10vw 5vw;
+    text-align: center;
+
+    p {
+      width: 90%;
+    }
+
+    h1 {
+      font-size: 6vw;
+    }
+    h3 {
+      font-size: 16px;
+    }
+  }
+
+  .colonne_wakanda {
+    grid-template-columns: 1fr;
+    padding: 3em 2em;
+    gap: 2em;
+  }
+
+  .pantherwakanda1 {
+    width: 120%;
+    left: -10vw;
+  }
+
+  .video_wakanda {
+    width: 90%;
+    padding: 1em;
+  }
+}
+
+/* Pour les petits écrans (smartphones) */
+@media (max-width: 480px) {
+  .wakanda_section1 {
+    padding: 12vw 4vw;
+    text-align: center;
+
+    h1 {
+      font-size: 7vw;
+    }
+  }
+
+  .colonne_wakanda {
+    padding: 2em 1em;
+  }
+
+  .pantherwakanda1 {
+    width: 130%;
+    left: -15vw;
+  }
+
+  .video_wakanda {
+    width: 100%;
+  }
+}

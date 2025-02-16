@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "beynoregular";
+  src: url(".../police/webfontkit-BlackPanther/beyno-webfont.woff2")
+      format("woff2"),
+    url("../police/webfontkit-BlackPanther/beyno-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "cantarellregular";
+  src: url("../police/webfontkit-BlackPanther/cantarell-regular-webfont.woff2")
+      format("woff2"),
+    url("../police/webfontkit-BlackPanther/cantarell-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pantheraregular";
+  src: url("../police/webfontkit-BlackPanther/panthera-webfont.woff2")
+      format("woff2"),
+    url("../police/webfontkit-BlackPanther/panthera-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "wakanda_foreverregular";
+  src: url("../police/webfontkit-BlackPanther/wakandaforever-regular-webfont.woff2")
+      format("woff2"),
+    url("../police/webfontkit-BlackPanther/wakandaforever-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
